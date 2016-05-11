@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+def delete_last_line
+  Dir.glob("**/*").each do |file|
+    if file.match(/^BZ_.*/) || file.match(/\/BZ_.*/) || file.match(/.*\.txt$/)
+      File.open(file, 'r+')
+      nummer = IO.readlines(file)[-1].size
+      File.write(file, File.read(file, File.stat(file).size-nummer))
+    end
+  end
+end
+
+p "Deleting the last line from files that start with BZ_ or end on .txt"
+delete_last_line

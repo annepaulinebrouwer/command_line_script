@@ -1,0 +1,10 @@
+# This file should be ignored for both command lines.
+# No deletion of last line, neither summing the bytes.
+# ******************************************
+# This file should be ignored for both command lines.
+# No deletion of last line, neither summing the bytes.
+# ********************************************
+# This file should be ignored for both command lines.
+# No deletion of last line, neither summing the bytes.
+
+# ************ Last Line******************

@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+def sum_of_bytes
+  sum = 0
+  Dir["*"].each do |file|
+    sum += File.open(file).size if file.match(/e/)
+  end
+  return sum
+end
+
+p "This directory contains: #{sum_of_bytes} bytes"
